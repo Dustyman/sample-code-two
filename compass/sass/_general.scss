@@ -1,0 +1,65 @@
+// ----- SETUP GENERALS -----
+h1, h2, h3 {
+  font-family: $sourcesans-light;
+  font-weight: 100;
+  font-size: 50px;
+  color: $white;
+}
+
+h2, h3, p {
+  color: $dark-gray;
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p, li {
+  font-family: $sourcesans-reg;
+  font-size: 16px;
+}
+
+#main p {
+  line-height: 24px;
+}
+
+.green-btn {
+  background: $button-grad1;
+  @include gradient(top, $button-grad1, $button-grad2);
+  @include border-radius(4px);
+  font-family: $sourcesans-semibold;
+  color: $white;
+  font-size: 14px;
+  padding: 10px 15px;
+  border: solid $button-grad2 1px;
+  text-decoration: none;
+  cursor: pointer;
+
+  @include bp(phone) {
+    font-size: 12px;
+  }
+
+  &:hover {
+    background: $button-hover1;
+    @include gradient(top, $button-hover1, $button-hover2);
+    text-decoration: none;
+  }
+}
+
+.gray-btn {
+  background-color:$button-gray;
+  @include border-radius(4px);
+  display:inline-block;
+  cursor:pointer;
+  color: $white;
+  font-family: $sourcesans-semibold;
+  font-size:15px;
+  padding:10px 15px;
+  text-decoration:none;
+
+  &:hover {
+    background-color: $button-gray-hover;
+  }
+}
